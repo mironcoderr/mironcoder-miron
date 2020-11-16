@@ -1,0 +1,95 @@
+
+
+/*=====================================
+        INNER RESUME BANNER STYLE
+======================================*/
+.single-banner {
+    .inner-oly {
+        padding: 115px 0px 115px;
+    }
+}
+
+.inner-exper,
+.inner-edu,
+.inner-refer {
+    display: block;
+}
+
+.inner-about {
+    padding: 142px 0px 0px;
+}
+
+.about-heading {
+    h2 {
+        width: 450px;
+    }
+}
+
+.inner-exper {
+    padding: 142px 0px 0px;
+}
+
+.exper-heading {
+    h2 {
+        width: 400px;
+    }
+}
+
+.inner-edu {
+    padding: 110px 0px 0px;
+}
+
+.edu-heading {
+    h2 {
+        width: 400px;
+    }
+}
+
+.inner-refer {
+    padding: 110px 0px 0px;
+}
+
+.refer-heading {
+    h2 {
+        width: 400px;
+    }
+}
+
+// INNER RESUME RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .about-heading,
+    .exper-heading,
+    .edu-heading,
+    .refer-heading {
+        h2 {
+            width: 100%;
+        }
+    }
+
+    .single-banner {
+        .inner-oly {
+            padding: 60px 0px;
+        }
+    }
+
+    .inner-about {
+        padding: 70px 0px 0px;
+    }
+
+    .inner-exper {
+        padding: 35px 0px 0px;
+    }
+
+    .inner-edu {
+        padding: 40px 0px 0px;
+    }
+
+    .inner-refer {
+        padding: 50px 0px 0px;
+    }
+
+    .inner-skills {
+        padding: 40px 0px 0px;
+    }
+}

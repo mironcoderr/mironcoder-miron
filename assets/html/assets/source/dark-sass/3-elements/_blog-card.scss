@@ -1,0 +1,185 @@
+
+
+
+/*=====================================
+            BLOG CARD STYLE
+======================================*/
+.blog-card {
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+    &:hover {
+        .blog-oly {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .blog-img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        .blog-text {
+            h4 {
+                a {
+                    color: $brand__color;
+                }
+            }
+        }
+    }
+}
+
+.blog-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 22px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+        @include cursor__transition;
+    }
+}
+
+.blog-oly {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    @include cursor__transition;
+
+    p {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        padding: 4px 12px;
+        background: $brand__color;
+        border-radius: 5px;
+        color: $wh__color;
+        font-size: 13px;
+        line-height: 22px;
+        text-transform: capitalize;
+    }
+}
+
+.blog-content {
+    padding: 0px 15px;
+}
+
+.blog-meta {
+    @include flex__center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+
+    li {
+        @include flex__center;
+
+        i {
+            margin-right: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.blog-text {
+    margin-bottom: 20px;
+
+    h4 {
+        font-weight: 500;
+
+        a {
+            color: $heading__color;
+            @include cursor__transition;
+        }
+    }
+}
+
+.blog-link {
+    @include flex__center;
+    justify-content: space-between;
+
+    li {
+        @include flex__center;
+
+        i {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            text-transform: capitalize;
+        }
+
+        a {
+            font-size: 13px;
+            line-height: 20px;
+            padding: 6px 25px;
+        }
+    }
+}
+
+/*=====================================
+         BLOG SUGGEST CARD STYLE
+======================================*/
+.blog-suggest {
+    @include flex__center;
+    justify-content: flex-start;
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid $border__color;
+}
+
+.suggest-img {
+    a {
+        img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 15px;
+            box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.suggest-title {
+    margin-bottom: 18px;
+
+    h6 {
+        font-weight: 600;
+        line-height: 24px;
+
+        a {
+            color: $heading__color;
+            @include cursor__transition;
+            
+            &:hover {
+                color: $brand__color;
+            }
+        }
+    }
+}
+
+.suggest-date {
+    @include flex__center;
+    justify-content: flex-start;
+
+    i {
+        margin-right: 10px;
+    }
+
+    p {
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+}
+

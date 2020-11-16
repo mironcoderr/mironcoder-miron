@@ -1,0 +1,114 @@
+
+
+/*=====================================
+          PORTFOLIO CARD STYLE
+======================================*/
+.port-card {
+    margin: 0px 25px;
+    border-radius: 8px;
+    position: relative;
+
+    &:hover {
+        .port-oly{
+            transform: scale(1);
+            transform-origin: center;
+        }
+    }
+}
+
+.port-img {
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.port-oly{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(0);
+    @include cursor__transition;
+}
+
+.port-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 160px;
+
+    .btn {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 10px 25px;
+        margin: 12px 0px;
+        border-radius: 5px;
+        letter-spacing: 0.3px;
+        @include cursor__transition;
+    }
+
+    .btn-inline {
+        color: $brand__color;
+        background: $wh__color;
+
+        &:hover {
+            color: #fff;
+            background: $brand__color;
+        }
+    }
+}
+
+.port-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0px 25px;
+    @include flex__center;
+    justify-content: space-between;
+
+    h6 {
+        color: $wh__color;
+        font-weight: 500;
+        text-transform: capitalize;
+        letter-spacing: 0.3px;
+        margin-left: 15px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: -15px;
+            width: 3px;
+            height: 100%;
+            background: $brand__color;
+            transform: translateY(-50%);
+        }
+    }
+
+    a {
+        width: 38px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 16px;
+        background: $body__color;
+        color: $brand__color;
+
+        &:hover {
+            color: $wh__color;
+            background: $brand__color;
+        }
+    }
+}
+

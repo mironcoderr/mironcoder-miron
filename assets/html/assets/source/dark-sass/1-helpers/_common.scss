@@ -1,0 +1,103 @@
+
+
+
+/*=====================================
+            ALL COMMON STYLE
+======================================*/
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+span,
+label {
+    margin-bottom: 0px;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: $body__color;
+    background: $body__bg;
+    font-size: $body__size;
+    font-weight: $regular__weight;
+    font-family: $primary__family;
+    line-height: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $heading__color;
+    font-weight: $bold__weight;
+}
+
+h1 {
+    font-size: $h1__size;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: $h2__size;
+    line-height: 45px;
+}
+
+h3 {
+    font-size: $h3__size;
+    line-height: 42px;
+}
+
+h4 {
+    font-size: $h4__size;
+    line-height: 32px;
+}
+
+h5 {
+    font-size: $h5__size;
+}
+
+h6 {
+    font-size: $h6__size;
+}
+
+input,
+textarea {
+    &::placeholder {
+        color: $placeholder__color;
+        font-size: 15px;
+        letter-spacing: 0.3px;
+    }
+}
+
+button:focus {
+    outline: none;
+}

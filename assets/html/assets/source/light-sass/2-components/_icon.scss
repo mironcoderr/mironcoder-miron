@@ -1,0 +1,69 @@
+
+
+
+/*=====================================
+            ALL ICON STYLE
+======================================*/
+.icon {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 16px;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.25);
+    @include cursor__transition;
+}
+
+.icon-inline {
+    color: $wh__color;
+    background: $brand__color;
+
+    &:hover {
+        color: $wh__color;
+        background: $heading__color;
+        transform: translateY(-3px);
+        box-shadow: 0px 5px 15px 0px rgba(72, 69, 90, 0.3);
+    }
+}
+
+.icon-outline {
+    color: $icon__color;
+    background: $wh__color;
+    border: 1px solid $border__color;
+
+    &:hover {
+        color: $wh__color;
+        background: $brand__color;
+    }
+}
+
+.icon-light {
+    color: $icon__color;
+    background: $light__color;
+
+    &:hover {
+        background: $light__hover__color;
+    }
+}
+
+// ICON RESPONSIVE STYLE
+
+@media (max-width: 400px) {
+    .icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 991px) {
+    .icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+}

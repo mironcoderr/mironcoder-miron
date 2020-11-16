@@ -1,0 +1,200 @@
+
+
+
+/*======================================
+           NAVBAR PART STYLE
+=======================================*/
+.navbar-part {
+    padding: 0px 15px;
+
+    .container {
+        max-width: 1300px
+    }
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+    background: $shape__one;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+    @include flex__center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    img {
+        width: 130px;
+    }
+}
+
+.navbar-toggle {
+    border: none;
+    outline: none;
+    background: none;
+    display: none;
+
+    i {
+        background: $brand__color;
+        color: $wh__color;
+        border-radius: 3px;
+        padding: 8px 10px;
+        font-size: 16px;
+        @include cursor__transition;
+
+        &:hover {
+            color: $wh__color;
+            background: $heading__color;
+        }
+    }
+}
+
+.navbar-slide {
+    @include flex__center;
+}
+
+.navbar-cross {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: none;
+
+    i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 16px;
+        color: $heading__color;
+        background: $wh__color;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+        @include cursor__transition;
+
+        &:hover {
+            color: $wh__color;
+            background: $brand__color;
+        }
+    }
+}
+
+.navbar-list {
+    @include flex__center;
+}
+
+.navbar-link {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 35px 15px;
+    border-radius: 5px;
+    color: $heading__color;
+    transform: skewX(-5deg);
+    text-transform: capitalize;
+    @include cursor__transition;
+
+    &:hover {
+        color: $wh__color;
+        background: $brand__color;
+    }
+}
+
+.navbar-item.active {
+    .navbar-link {
+        color: $wh__color;
+        background: $brand__color;
+    }
+}
+
+.navbar-btn {
+    margin-left: 25px;
+}
+
+// NAVBAR RESPONSIVE PART STYLE
+@media (max-width: 1270px) {
+
+    .navbar-part {
+        padding: 8px 15px;
+    }
+
+    .navbar-logo {
+        img {
+            width: 110px;
+        }
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-slide {
+        position: fixed;
+        top: 0px;
+        right: -260px;
+        z-index: 3;
+        width: 250px;
+        height: 100vh;
+        padding: 70px 15px 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background: #f9f9f9;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.1);
+        transition: all linear .4s;
+    }
+
+    .navbar-slide.active {
+        right: 0px;
+    }
+
+    .navbar-cross {
+        display: block;
+    }
+
+    .navbar-list {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+
+        li {
+            border-bottom: 1px solid $border__color;
+        }
+    }
+
+    .navbar-link {
+        width: 100%;
+        padding: 12px 15px;
+    }
+
+    .navbar-src {
+        margin-left: 0px;
+        margin-bottom: 15px;
+
+        &:focus-within {
+            input {
+                width: 160px;
+            }
+        }
+    }
+
+    .navbar-btn {
+        margin-left: 0px;
+        width: 100%;
+
+        .btn {
+            display: block;
+            padding: 14px 0px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+
+
+ 

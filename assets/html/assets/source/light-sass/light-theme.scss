@@ -1,0 +1,122 @@
+
+
+/*========================================
+Author Name:   Mironitem
+Template Type: Personal Portfolio
+Email:         mironbonny1994@gmail.com
+Facebook:      https://www.facebook.com/mironcoder/
+Linkedin:      https://www.linkedin.com/in/mironcoder/
+Brand Color:   #fe6347, #48455a
+Icon:          Flat Icon, Font Awesome
+Text font:     Poppins
+Version:       v1.0.01
+-----------------------------
+
+Thanks for purchasing the template. I hope the templete will come in handy. If you want to develop this template then you can contact me, I will develop you at a very reasonable price. In addition, I am available for any kind of support.
+
+By the way,
+Dont't forgot your feedback or ratings.
+
+-----------------------------
+## TABLE OF COMPONENT STYLE
+-----------------------------
+01. GEAR BUTTON
+02. BACK2TOP BUTTON
+03. ALL FORM
+04. ALL BUTTON
+05. DROPDOWN MENU
+06. ALL ICON
+07. SLIDER ARROW
+08. BREADCRUMB
+09. SELECT OPTION
+10. PAGINATION
+11. NAV TABS
+12. STAR RATING
+
+-----------------------------
+## TABLE OF ELEMENT STYLE
+-----------------------------
+01. SECTION HEADING
+02. RESUME CARD
+03. REFERENCE
+04. SERVICE CARD
+05. PORTFOLIO CARD
+06. SKILLS CARD
+07. COUNTER CARD
+08. PRICING CARD
+09. TESTIMONIAL CARD
+10. BLOG CARD
+11. FEATURE CARD
+
+-----------------------------
+## TABLE OF LAYOUT STYLE
+-----------------------------
+01. NAVBAR
+02. CONTACT
+03. FOOTER 
+04. INNER BANNER
+
+=========================================*/
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "1-helpers/_font.scss";
+@import "1-helpers/_variable.scss";
+@import "1-helpers/_mixin.scss";
+@import "1-helpers/_common.scss";
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "2-components/_gear-btn.scss";
+@import "2-components/_back2top-btn.scss";
+@import "2-components/_form.scss";
+@import "2-components/_button.scss";
+@import "2-components/_dropdown-menu.scss";
+@import "2-components/_icon.scss";
+@import "2-components/_slider-arrow.scss";
+@import "2-components/_breadcrumb.scss";
+@import "2-components/_select-option.scss";
+@import "2-components/_pagination.scss";
+@import "2-components/_nav-tabs.scss";
+@import "2-components/_star-rating.scss";
+
+//=======================================
+//          3 - ELEMENTS FOLDER
+//=======================================
+@import "3-elements/_section-heading.scss";
+@import "3-elements/_resume-card.scss";
+@import "3-elements/_reference.scss";
+@import "3-elements/_service-card.scss";
+@import "3-elements/_portfolio-card.scss";
+@import "3-elements/_skills-card.scss";
+@import "3-elements/_counter-card.scss";
+@import "3-elements/_pricing-card.scss";
+@import "3-elements/_testimonial-card.scss";
+@import "3-elements/_blog-card.scss";
+@import "3-elements/_feature-card.scss";
+
+//=======================================
+//          4 - LAYOUTS FOLDER
+//=======================================
+@import "4-layouts/_navbar.scss";
+@import "4-layouts/_contact.scss";
+@import "4-layouts/_footer.scss";
+@import "4-layouts/_inner-banner.scss";
+
+//=======================================
+//          5 - PAGES FOLDER
+//=======================================
+@import "5-pages/_index.scss";
+@import "5-pages/_service.scss";
+@import "5-pages/_resume.scss";
+@import "5-pages/_portfolio-grid.scss";
+@import "5-pages/_portfolio-details.scss";
+@import "5-pages/_blog-grid.scss";
+@import "5-pages/_blog-details.scss";
+
+//=======================================
+//          6 - RESPONSIVE FOLDER
+//=======================================

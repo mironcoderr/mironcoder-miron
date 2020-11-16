@@ -1,0 +1,324 @@
+
+
+
+/*=====================================
+         FORM ROUND GRID STYLE
+======================================*/
+.form-round-grid {
+    @include flex__center;
+    justify-content: space-between;
+    background: $wh__color;
+    border-radius: 30px;
+    padding: 6px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+
+    input {
+        width: 293px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        padding: 0px 20px;
+    }
+
+    .btn {
+        padding: 0px;
+
+        i {
+            margin: 0px;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
+
+    .btn-inline {
+        &:hover {
+            transform: translateY(0px);
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .form-round-grid {
+        input {
+            width: 83%;
+        }
+    }
+}
+
+/*=====================================
+            NAVBAR SEARCH STYLE
+======================================*/
+.navbar-src {
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+    background: $heading__color;
+    margin-left: 15px;
+
+    &:focus-within {
+        input {
+            width: 200px;
+            padding-left: 15px;
+        }
+
+        a {
+            font-size: 12px;
+            color: $wh__color;
+            background: $brand__color
+        }
+    }
+
+    input {
+        border: none;
+        background: none;
+        width: 0px;
+        float: left;
+        color: $wh__color;
+        font-size: 15px;
+        line-height: 30px;
+        @include cursor__transition;
+
+        &::placeholder {
+            color: $light__color;
+        }
+    }
+
+    a {
+        border: none;
+        float: right;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        color: $brand__color;
+        background: transparent;
+        @include cursor__transition;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+/*=====================================
+            CONTACT FORM STYLE
+======================================*/
+.input-grid {
+    @include flex__center;
+
+    input {
+        width: 297px;
+        margin: 10px;
+        border: none;
+        outline: none; 
+        height: 50px;
+        padding: 0px 20px;
+        border-radius: 30px;
+        color: $heading__color;
+        background: $light__color;
+        border: 1px solid transparent;
+        @include cursor__transition;
+
+        &:focus-within {
+            background: $shape__ten;
+            border: 1px solid $brand__color;
+        }
+    }
+
+    textarea {
+        border: none;
+        outline: none;
+        resize: none;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 30px;
+        height: 200px;
+        width: 100%;
+        border: 1px solid transparent;
+        color: $heading__color;
+        background: $light__color;
+        @include cursor__transition;
+
+        &:focus-within {
+            background: $shape__ten;
+            border: 1px solid $brand__color;
+        }
+    }
+}
+
+::-webkit-file-upload-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-transform: capitalize;
+    margin-top: 9px;
+    cursor: pointer;
+    color: $placeholder__color;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+.input-btn {
+    .btn {
+        margin: 30px 0px 0px 10px;
+    }
+}
+
+// CONTACT FORM RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .input-grid {
+        input {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-form {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .input-grid {
+        flex-direction: column;
+    }
+
+    .input-btn {
+        .btn {
+            margin: 30px 0px 0px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .input-grid {
+        input {
+            width: 245px;
+        }
+    }
+}
+
+/*=====================================
+      INNER PORTFOLIO SEARCH STYLE
+======================================*/
+.port-src {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.port-form  {
+    padding: 7px;
+    border-radius: 30px;
+    @include flex__center;
+    background: $wh__color;
+    display: inline-block;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+
+    input {
+        border: none;
+        width: 320px;
+        height: 50px;
+        padding: 0px 20px;
+        background: transparent;
+    }
+
+    .btn-inline {
+        &:hover {
+            transform: translateY(0px);
+        }
+    }
+}
+
+// INNER PORTFOLIO SEARCH RESPONSIVE STYLE
+
+@media (max-width: 575px) {
+    .port-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        padding: 15px 10px;
+
+        input {
+            width: 100%;
+            border-bottom: 1px solid $border__color;
+        }
+
+        .custom-select {
+            width: 100%;
+            height: 45px;
+            border-left: none;
+            margin-bottom: 15px;
+            border-bottom: 1px solid $border__color;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .port-form {
+        input {
+            width: 215px;
+        }
+    }
+}
+
+/*=====================================
+            FORM BLOCK STYLE
+======================================*/
+.form-block {
+    input {
+        width: 100%;
+        margin: 10px;
+        border: none;
+        outline: none; 
+        height: 50px;
+        padding: 0px 20px;
+        border-radius: 30px;
+        color: $heading__color;
+        background: $light__color;
+        border: 1px solid transparent;
+        @include cursor__transition;
+
+        &:focus-within {
+            background: $shape__ten;
+            border: 1px solid $brand__color;
+        }
+    }
+
+    textarea {
+        border: none;
+        outline: none;
+        resize: none;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 30px;
+        height: 200px;
+        width: 100%;
+        border: 1px solid transparent;
+        color: $heading__color;
+        background: $light__color;
+        @include cursor__transition;
+
+        &:focus-within {
+            background: $shape__ten;
+            border: 1px solid $brand__color;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+
+
+
+
+
+

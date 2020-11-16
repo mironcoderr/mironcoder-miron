@@ -1,0 +1,96 @@
+
+
+
+/*=====================================
+            ALL BUTTON STYLE
+======================================*/
+.btn {
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 16px 35px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 25px 0px rgba(72, 69, 90, 0.1);
+    @include cursor__transition;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+
+    i {
+        margin-right: 8px;
+        margin-top: -1px;
+    }
+}
+
+.duel-btn {
+    .btn {
+        margin-right: 15px;
+
+        &:nth-child(1) {
+            background: $btn__bg;
+        }
+    
+        &:nth-child(2) {
+            &:hover {
+                background: $brand__color;
+            }
+        }
+    }
+}
+
+.btn-inline {
+    color: $wh__color;
+    background: $brand__color;
+
+    &:hover {
+        color: $wh__color;
+        background: $btn__bg;
+        transform: translateY(-3px);
+        box-shadow: 0px 25px 60px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.btn-outline {
+    color: $brand__color;
+    background: $btn__bg;
+    border: 1px solid $brand__color;
+
+    &:hover {
+        color: $wh__color;
+        background: $brand__color;
+    }
+}
+
+.btn-light {
+    color: $icon__color;
+    background: $light__color;
+
+    &:hover {
+        background: $light__hover__color;
+    }
+}
+
+// DUEL BUTTON RESPONSIVE STYLE
+
+@media (max-width: 450px) {
+    .duel-btn {
+        width: 210px;
+        margin: 0 auto;
+        text-align: center;
+
+        .btn {
+            margin: 8px 0px;
+        }
+    }
+}
+
+@media (min-width: 451px) and (max-width: 575px) {
+    .duel-btn {
+        .btn {
+            margin: 0px 8px;
+        }
+    }
+}

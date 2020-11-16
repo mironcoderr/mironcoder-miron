@@ -1,0 +1,146 @@
+
+
+
+/*=====================================
+            FEATURE PART STYLE
+======================================*/
+.feature-part {
+    transform: translateY(-50%);
+}
+
+// FEATURE RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .feature-part {
+        transform: translateY(-35%);
+    }
+
+    .feature-card {
+        margin: 0px 8px;
+        padding: 30px 18px 35px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .feature-card {
+        padding: 30px 30px 35px;
+    }
+}
+
+/*=====================================
+        INNER PORTFOLIO PART STYLE
+======================================*/
+.inner-port-part {
+    padding: 32px 0px 0px;
+}
+
+.inner-port-heading {
+    text-align: center;
+    margin-bottom: 45px;
+
+    h2 {
+        font-size: 40px;
+        text-transform: capitalize;
+        margin-bottom: 22px;
+    }
+}
+
+.port-menu {
+    @include flex__center;
+    margin-bottom: 35px;
+
+    li {
+        margin: 0px 12px;
+
+        .active {
+            color: $wh__color;
+            background: $brand__color;
+        }
+    }
+}
+
+.menu {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $heading__color;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    letter-spacing: 0.3px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: 1px solid $brand__color;
+    border-bottom: 2px solid $brand__color;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.port-parent {
+    margin-bottom: 25px;
+
+    .port-card {
+        margin: 25px 10px;
+    }
+}
+
+.port-inner-btn {
+    top: 40%;
+}
+
+// INNER PORTFOLIO RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .inner-port-part {
+        padding: 0px 0px;
+    }
+
+    .inner-port-heading {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    .port-menu {
+        flex-wrap: wrap;
+
+        li {
+            margin: 7px 7px;
+        }
+    }
+
+    .port-parent .port-card {
+        margin: 15px 0px;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 575px) {
+    .inner-port-part {
+        .container {
+            max-width: 420px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .inner-port-part {
+        .container {
+            max-width: 568px;
+        }
+    }
+
+    .port-parent {
+        .col-sm-6 {
+            padding: 0px 10px;
+        }
+
+        .port-card {
+            margin: 10px 0px;
+        }
+    }
+}

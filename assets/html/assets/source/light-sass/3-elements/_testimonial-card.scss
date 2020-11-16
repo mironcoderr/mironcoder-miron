@@ -1,0 +1,75 @@
+
+
+
+/*=====================================
+          TESTIMONIAL CARD STYLE
+======================================*/
+.testi-card {
+    margin: 0px 15px;
+    padding: 45px 30px 40px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background: $shape__ten;
+    @include cursor__transition;
+
+    &:hover {
+        background: $brand__color;
+
+        .testi-quote p,
+        .testi-meta h5,
+        .testi-meta p {
+            color: $wh__color;
+        }
+    }
+
+    i {
+        position: absolute;
+        bottom: 10px;
+        right: -50px;
+        font-size: 150px;
+        color: $shape__nine;
+    }
+}
+
+.testi-quote {
+    margin-bottom: 30px;
+
+    p {
+        font-size: 18px;
+        color: $icon__color;
+        @include cursor__transition;
+    }
+}
+
+.testi-meta {
+    h5 {
+        font-weight: 600;
+        margin-bottom: 2px;
+        color: $heading__color;
+        text-transform: capitalize;
+        @include cursor__transition;
+    }
+
+    p {
+        font-weight: 500;
+        margin-bottom: 7px;
+        color: $heading__color;
+        text-transform: capitalize;
+        @include cursor__transition;
+    }
+
+    a {
+        border-radius: 50%;
+        border: 2px solid $brand__color;
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 3px solid $wh__color;
+        }
+    }
+}
+

@@ -1,0 +1,20 @@
+
+
+
+/*=====================================
+            SELECT OPTION STYLE
+======================================*/
+.custom-select {
+    border-radius: 0px;
+    background: $card__bg;
+    color: $placeholder__color;
+    border: none;
+    width: 120px;
+    font-size: 14px;
+    border-left: 1px solid $border__color;
+    cursor: pointer;
+}
+
+.custom-select:focus {
+    box-shadow: none;
+}

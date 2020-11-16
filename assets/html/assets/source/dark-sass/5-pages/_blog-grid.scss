@@ -1,0 +1,208 @@
+
+
+/*=====================================
+         BLOG LIST PART STYLE
+======================================*/
+.blog-list-part {
+    padding: 100px 0px 0px;
+}
+
+// BLOG BAR SEARCH
+.blog-bar-src {
+    margin-bottom: 45px;
+}
+
+// BLOG BAR LIST
+.blog-bar-list {
+    margin-bottom: 45px;
+
+    h4 {
+        position: relative;
+        display: inline-block;
+        text-transform: capitalize;
+        margin-bottom: 28px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            right: -50px;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 2px;
+            background: $brand__color;
+        }
+    }
+
+    ul {
+        li {
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+// BLOG SUGGEST LIST
+.blog-suggest-list {
+    margin-bottom: 42px;
+
+    .blog-suggest {
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+// BLOG CATEGORY LIST
+.blog-cate-list {
+    ul {
+        li {
+            @include flex__center;
+            justify-content: space-between;
+            border-bottom: 1px solid $border__color;
+            margin-bottom: 18px;
+            padding-bottom: 18px;
+            
+            &:hover {
+                h6 {
+                    a {
+                        color: $brand__color;
+                    }
+                }
+
+                p {
+                    background: $brand__color;
+                }
+            }
+
+            h6 {
+                font-weight: 500;
+
+                a {
+                    color: $heading__color;
+                    @include cursor__transition;
+                }
+            }
+
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 50%;
+                color: $wh__color;
+                background: $icon__bg;
+                @include cursor__transition;
+            }
+        }
+    }
+}
+
+// BLOG TAG LIST
+.blog-tag-list {
+    ul {
+        li {
+            display: inline-block;
+            margin: 0px 8px 12px 0px;
+
+            a {
+                color: $heading__color;
+                font-size: 13px;
+                padding: 2px 12px;
+                border-radius: 30px;
+                text-transform: capitalize;
+                border: 1px solid $border__color;
+                @include cursor__transition;
+
+                &:hover {
+                    color: $wh__color;
+                    background: $brand__color;
+                    border-color: $brand__color;
+                }
+            }
+        }
+    }
+}
+
+// BLOG FLOW LIST
+.blog-follow-list {
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+    .icon {
+        box-shadow: none;
+    }
+}
+
+// BLOG BANNER AD
+.blog-banner-ad {
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+// BLOG LIST PAGINATION
+.blog-list-pagi {
+    margin-top: 30px;
+}
+
+// BLOG BAR PART
+.blogbar-part {
+    padding: 140px 0px 0px;
+
+    .col-lg-4 {
+        padding: 0px 25px;
+    }
+}
+
+// BLOG LIST RESPONSIVE STYLE
+@media (max-width: 767px) {
+    .blogbar-part {
+        padding: 30px 0px 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .blog-list-part {
+        padding: 60px 0px 0px;
+    }
+
+    .content-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .blog-list-pagi {
+        margin-top: 10px;
+        margin-bottom: 50px;
+
+        .page-item {
+            margin: 0px 5px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog-list-part {
+        padding: 80px 0px 0px;
+    }
+
+    .blog-follow-list ul li {
+        margin-right: 6px;
+    }
+
+    .blogbar-part {
+        .icon {
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+        }
+    }
+}

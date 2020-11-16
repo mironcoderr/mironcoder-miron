@@ -1,0 +1,386 @@
+
+
+
+/*=====================================
+         BLOG DETAILS PART STYLE
+======================================*/
+.blog-details-part {
+    padding: 100px 0px 55px;
+}
+
+.details-title {
+    margin-bottom: 20px;
+
+    h2 {
+        a {
+            color: $heading__color;
+        }
+    }
+}
+
+.details-meta {
+    @include flex__center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+
+    li {
+        @include flex__center;
+        padding: 0px 18px;
+        border-right: 1px solid $border__color;
+
+        &:first-child {
+            padding-left: 0px;
+        }
+
+        &:last-child {
+            padding-right: 0px;
+            border-right: none;
+        }
+
+        i {
+            font-size: 14px;
+            margin-right: 8px;
+            margin-top: -2px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+.details-img {
+    margin-bottom: 30px;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.details-descrip {
+    p {
+        margin-bottom: 35px;
+
+        span {
+            display: block;
+            margin-top: 25px;
+        }
+    }
+}
+
+.details-subtitle {
+    margin-bottom: 35px;
+
+    h4 {
+        margin-bottom: 25px;
+    }
+
+    p {
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+.details-quote {
+    padding: 50px 50px;
+    background: $card__bg;
+    border-left: 5px solid $brand__color;
+    margin-bottom: 45px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 22px;
+        font-style: italic;
+        line-height: 35px;
+        margin-bottom: 35px;
+    }
+
+    span {
+        font-weight: 500;
+        align-self: flex-end;
+        text-transform: capitalize;
+    }
+}
+
+.details-list {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 50px;
+
+    li {
+        margin-bottom: 20px;
+    }
+}
+
+// BLOG DETAILS RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .blog-details-part {
+        padding: 60px 0px 10px;
+    }
+
+    .details-title {
+        h2 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+
+    .details-meta {
+        flex-wrap: wrap;
+    }
+
+    .details-quote {
+        padding: 40px 40px;
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog-banner-ad {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .details-meta {
+        li {
+            padding: 0px 9px;
+
+            p,
+            i {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+/*=====================================
+        DETAILS SUGGEST PART STYLE
+======================================*/
+.suggest-slider {
+    padding: 60px 0px 50px;
+    border-top: 1px solid $border__color;
+    border-bottom: 1px solid $border__color;
+
+    li {
+        width: 336px;
+        margin: 0px 25px;
+
+        &:hover {
+            img {
+                opacity: 0.8;
+            }
+
+            a {
+                color: $brand__color;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            @include cursor__transition;
+        }
+
+        h5 {
+            text-transform: inherit;
+            line-height: 26px;
+            margin-bottom: 8px;
+            font-weight: 600;
+
+            a {
+                color: $heading__color;
+                @include cursor__transition;
+            }
+        }
+
+        p {
+            font-size: 14px;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .dandik {
+        right: -25px;
+    }
+
+    .bamdik {
+        left: -25px;
+    }
+}
+
+/*=====================================
+        DETAILS USER PART STYLE
+======================================*/
+.blog-user-part {
+    padding: 76px 0px 0px;
+}
+
+.user-comment {
+    h4 {
+        margin-bottom: 30px;
+    }
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px 21px;
+    border-bottom: 1px solid $border__color;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.comment {
+    @include flex__start;
+    align-items: center;
+    margin-bottom: 18px;
+
+    a {
+        img {
+            width: 80px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 25px;
+        }
+    }
+}
+
+.comment-text {
+    p {
+        line-height: 26px;
+    }
+}
+
+.comment-header {
+    @include flex__center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    li {
+        font-size: 14px;
+
+        a {
+            font-weight: 500;
+            color: $heading__color;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.comment-reply {
+    align-self: flex-end;
+
+    a {
+        font-size: 16px;
+        font-weight: 600;
+        color: $heading__color;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $brand__color;
+        }
+
+        i {
+            margin-left: 8px;
+        }
+    }
+}
+
+.user-form {
+    h4 {
+        margin-bottom: 30px;
+    }
+}
+
+// DETAILS USER RESPONSIVE PART
+
+@media (max-width: 767px) {
+    .blog-user-part {
+        padding: 50px 0px 0px;
+    }
+
+    .comment {
+        align-items: flex-start;
+    }
+
+    .comment-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comment-item.ml-5 {
+        margin-left: 2rem !important;
+    }
+
+    .user-form {
+        input,
+        textarea,
+        .btn {
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*=====================================
+    BLOG DETAILS RIGHTBAR PART STYLE
+======================================*/
+.details-rightbar {
+    .details-content {
+        margin-right: 50px;
+    }
+}
+
+// BLOG DETAILS RIGHTBAR RESPONSIVE STYLE
+@media (max-width: 991px) {
+    .details-rightbar {
+        .details-content {
+            margin-right: 0px;
+        }
+    }
+}
+
+/*=====================================
+    BLOG DETAILS LEFTBAR PART STYLE
+======================================*/
+.details-leftbar {
+    .details-content {
+        margin-left: 50px;
+    }
+}
+
+// BLOG DETAILS LEFTBAR RESPONSIVE STYLE
+@media (max-width: 991px) {
+    .details-leftbar {
+        .details-content {
+            margin-left: 0px;
+        }
+    }
+}
+
+
+

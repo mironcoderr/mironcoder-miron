@@ -1,0 +1,27 @@
+
+
+
+/*=====================================
+        INNER SERVICE PART STYLE
+======================================*/
+.inner-service {
+    padding: 30px 0px 0px;
+
+    .service-heading {
+        h2 {
+            width: 550px;
+        }
+    }
+}
+
+// INNER SERVICE RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .inner-service {
+        .service-heading {
+            h2 {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,349 @@
+
+
+/*=====================================
+     PORTFOLIO CONTENT PART STYLE
+======================================*/
+.port-con-part {
+    padding: 100px 0px 0px;
+}
+
+.port-con-title {
+    margin-bottom: 30px;
+
+    h2 {
+        a {
+            color: $heading__color;
+        }
+    }
+}
+
+.port-con-img {
+    margin-bottom: 20px;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.port-con-meta {
+    @include flex__center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-right: 30px;
+
+    li {
+        @include flex__center;
+
+        &:hover {
+            p {
+                span {
+                    color: $brand__color;
+                }
+            }
+        }
+
+        i {
+            font-size: 14px;
+            margin-right: 5px;
+        }
+
+        p {
+            font-size: 14px;
+
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.port-con-btn {
+    @include flex__center;
+    margin-bottom: 30px;
+
+    .btn {
+        width: 280px;
+        padding: 12px 0px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 8px;
+        box-shadow: none;
+        margin-left: 20px;
+    }
+}
+
+.port-con-color {
+    @include flex__center;
+
+    span {
+        width: 160px;
+        height: 160px;
+        line-height: 145px;
+        text-align: center;
+        font-weight: 500;
+        margin: 0px 8px;
+        display: inline-block;
+        border-radius: 50%;
+
+        &:nth-child(1) {
+            border: 10px solid $brand__color;
+
+            &:hover {
+                color: $wh__color;
+                background: $brand__color;
+            }
+        }
+
+        &:nth-child(2) {
+            border: 10px solid $heading__color;
+
+            &:hover {
+                color: $body__bg;
+                background: $heading__color;
+            }
+        }
+    }
+}
+
+// PORTFOLIO CONTENT RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .port-con-part {
+        padding: 60px 0px 0px;
+    }
+
+    .port-con-title {
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    .port-con-meta {
+        margin-right: 0px;
+        flex-wrap: wrap;
+    }
+
+    .port-con-btn .btn {
+        width: 100%;
+    }
+}
+
+
+/*=====================================
+      PORTFOLIO DETAILS PART STYLE
+======================================*/
+.port-det-part {
+    padding: 60px 0px 0px;
+}
+
+.port-det-descrip p {
+    line-height: 28px;
+}
+  
+.port-det-descrip p span {
+    display: block;
+    margin-top: 30px;
+}
+
+.table {
+    th,td {
+        color: $body__color;
+    }
+}
+  
+@media (max-width: 767px) {
+    .port-det-part {
+      padding: 25px 0px 25px;
+    }
+}
+
+/*=====================================
+            REVIEW FORM STYLE
+======================================*/
+.review-form {
+    h3 {
+        margin: 0px 0px 25px 15px;
+    }
+
+    .btn {
+        margin-left: 15px;;
+    }
+}
+
+.grid-input {
+    @include flex__center;
+    margin-bottom: 30px;
+
+    input {
+        width: 100%;
+        height: 50px;
+        margin: 0px 15px;
+        padding: 0px 20px;
+        border-radius: 8px;
+        color: $heading__color;
+        background: $card__bg;
+        border: 1px solid $border__color;
+
+        &:focus-within {
+            border-color: $brand__color;
+        }
+    }
+}
+
+.row-input {
+    margin: 0px 15px 20px;
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    textarea {
+        height: 250px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        color: $heading__color;
+        background: $card__bg;
+        border: 1px solid $border__color;
+
+        &:focus-within {
+            border-color: $brand__color;
+        }
+    }
+}
+
+.review-rating {
+    margin: 0px 15px 30px;
+    display: flex;
+
+    li {
+        margin-right: 15px;
+
+        i {
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 50%;
+            background: $icon__bg;
+            color: $icon__color;
+            font-size: 14px;
+            text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+
+            &:hover {
+                color: #ffffff;
+                background: #ffcc23;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .grid-input {
+        flex-direction: column;
+        margin-bottom: 0px;
+
+        input {
+            margin-bottom: 20px;
+        }
+    }
+    .row-input {
+        margin: 0px 0px 20px;
+    }
+
+    .star-rating {
+        margin: 0px 0px 20px !important;
+    }
+
+    .review-form {
+        .btn {
+            margin-left: 0px;
+        }
+    }
+}
+
+
+/*=====================================
+        REVIEW LIST PART STYLE
+======================================*/
+.review-list {
+    margin-bottom: 50px;
+}
+
+.review-item {
+    @include flex__start;
+    padding: 30px 0px;
+    border-bottom: 1px solid $border__color;
+}
+
+.reviewer-img {
+    margin-right: 30px;
+
+    a {
+        img {
+            width: 100px;
+            border-radius: 8px;
+        }
+    }
+}
+
+.reviewer-meta {
+    @include flex__center;
+    justify-content: space-between;
+
+    a {
+        color: $heading__color;
+        font-weight: $medium__weight;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.reviewer-rating {
+    display: flex;
+    margin-bottom: 13px;
+
+    li {
+        margin-right: 5px;
+
+        i {
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+
+        .active {
+            color: #ffcc23;
+        }
+    }
+}
+
+.reviewer-descrip {
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .review-item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reviewer-img {
+        margin-bottom: 25px;
+    }
+}
+
+.port-footer {
+    padding: 150px 0px 100px;
+}

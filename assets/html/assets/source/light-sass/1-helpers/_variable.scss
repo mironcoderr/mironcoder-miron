@@ -1,0 +1,56 @@
+
+
+// =====================================
+//       ALL TYPOGRAPHY VARIABLES
+//======================================
+$h1__size: 35px;
+$h2__size: 35px;
+$h3__size: 32px;
+$h4__size: 22px;
+$h5__size: 18px;
+$h6__size: 16px;
+$body__size: 16px;
+
+$regular__weight: 400;
+$medium__weight: 500;
+$semi__weight: 600;
+$bold__weight: 700;
+
+$primary__family: 'Poppins', sans-serif;
+
+// =====================================
+//         ALL COLOR VARIABLES
+//======================================
+$wh__color: #ffffff;
+$body__color: #777777;
+$icon__color: #555555;
+$light__color: #e7e7e7;
+$brand__color: #fe6347;
+$border__color: #e8e8e8;
+$heading__color: #48455a;
+$placeholder__color: #777777;
+$light__hover__color: #dfdfdf;
+$brand__hover__color: #ed5c27;
+
+$shape__one: #ffeded;
+$shape__two: #fcfcfd;
+$shape__three: #ffdddd;
+$shape__four: #e44a00;
+$shape__five: #f7f7f7;
+$shape__six: #dddddd;
+$shape__seven: #cccccc;
+$shape__eight: #ff9683;
+$shape__nine: #ffbbbb;
+$shape__ten: #fff3f3;
+
+$primary__gradient: linear-gradient(#fe6347, #ee563b);
+
+// =====================================
+//         ALL SHADOW VARIABLES
+//======================================
+// BOX SHADOW
+$primary__box__shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.08);
+$secondary__box__shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+
+// TEXT SHADOW
+$primary__text__shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);

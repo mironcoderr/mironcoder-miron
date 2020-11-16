@@ -1,0 +1,94 @@
+
+
+
+/*=====================================
+            CONTACT PART STYLE
+======================================*/
+.contact-part {
+    padding: 142px 0px 0px;
+}
+
+.contact-heading {
+    h2 {
+        width: 420px;
+    }
+}
+
+.contact-address{
+    text-align: center;
+
+    &:hover {
+        .address-icon {
+            .icon-inline {
+                color: $wh__color;
+                background: $brand__color;
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+.address-icon {
+    margin-bottom: 28px;
+
+    .icon-inline {
+        color: $wh__color;
+        background: $icon__bg;
+    }
+}
+
+.address-text {
+    h4 {
+        line-height: 20px;
+        margin-bottom: 22px;
+        text-transform: capitalize;
+    }
+
+    p {
+        color: $heading__color;
+        line-height: 24px;
+
+        span {
+            display: block;
+            margin-top: 8px;
+        }
+    }
+}
+
+.contact-img {
+    img {
+        width: 100%;
+    }
+}
+
+// CONTACT RESPONSIVE STYLE
+
+@media (max-width: 767px) {
+    .contact-part {
+        padding: 60px 0px 0px;
+
+        .mb-5 {
+            margin-bottom: 10px !important;
+        }
+    }
+
+    .contact-heading {
+        h2 {
+            width: 100%;
+        }
+    }
+
+    .contact-address {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .address-text {
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+
